@@ -179,7 +179,7 @@ const Home = () => {
               <motion.div animate={{ scale: [1, 1.1, 1], opacity: [0.1, 0.2, 0.1] }} transition={{ duration: 4, repeat: Infinity }} className="absolute w-[80%] h-[80%] bg-[#EAFF00] blur-[140px] rounded-full" />
               <motion.img 
                 style={{ y: yParallax }} 
-                src="/public/me.png" 
+                src="/me.png" 
                 alt="RedCharger Studio Creative Lead"
                 decoding="async"
                 loading="eager"
@@ -268,21 +268,21 @@ const Home = () => {
       id: '01', 
       title: 'SOHO Restaurant', 
       cat: 'Website', 
-      img: '/public/soho.webp',
+      img: '/soho.webp',
       url: 'https://soho-eosin.vercel.app/'
     },
     { 
       id: '02', 
       title: 'Passco', 
       cat: 'Web App', 
-      img: '/public/passco.webp', // Fixed typo
+      img: '/passco.webp', // Fixed typo
       url: 'http://paxco.pythonanywhere.com/'
     },
     { 
       id: '03', 
       title: 'RedCharger', 
       cat: 'Web App', 
-      img: '/public/hsk.webp',
+      img: '/hsk.webp',
       url: 'https://redcharger.pythonanywhere.com/'
     }
   ].map((project, i) => (
