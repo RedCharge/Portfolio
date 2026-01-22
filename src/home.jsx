@@ -150,6 +150,8 @@ const Home = () => {
   const { scrollY } = useScroll();
   const yParallax = useTransform(scrollY, [0, 500], [0, -50]);
 
+  const BASE_URL = 'https://redcharger-portfolio.vercel.app';
+
   return (
     <div className="bg-[#050505] text-white min-h-screen selection:bg-[#EAFF00] selection:text-black font-body overflow-x-hidden">
       <style>{`
@@ -269,21 +271,21 @@ const Home = () => {
       id: '01', 
       title: 'SOHO Restaurant', 
       cat: 'Website', 
-      img: '/soho.webp',
+      img: '${BASE_URL}/soho.webp',
       url: 'https://soho-eosin.vercel.app/'
     },
     { 
       id: '02', 
       title: 'Passco', 
       cat: 'Web App', 
-      img: '/passco.webp', // Fixed typo
+      img: '${BASE_URL}/passco.webp', // Fixed typo
       url: 'http://paxco.pythonanywhere.com/'
     },
     { 
       id: '03', 
       title: 'RedCharger', 
       cat: 'Web App', 
-      img: '/hsk.webp',
+      img: '${BASE_URL}/hsk.webp',
       url: 'https://redcharger.pythonanywhere.com/'
     }
   ].map((project, i) => (
