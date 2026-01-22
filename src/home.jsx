@@ -6,10 +6,7 @@ import {
   Terminal,
   Cpu
 } from 'lucide-react';
-import soho from '/soho.webp';
-import passco from '/passco.webp';
-import hsk from '/hsk.webp';
-import me from '/me.png';
+
 
 // --- Official Brand Icons (High Fidelity SVGs) ---
 const SocialIcons = {
@@ -183,7 +180,7 @@ const Home = () => {
               <motion.div animate={{ scale: [1, 1.1, 1], opacity: [0.1, 0.2, 0.1] }} transition={{ duration: 4, repeat: Infinity }} className="absolute w-[80%] h-[80%] bg-[#EAFF00] blur-[140px] rounded-full" />
               <motion.img 
                 style={{ y: yParallax }} 
-                src={me} 
+                src="/me.png" 
                 alt="RedCharger Studio Creative Lead"
                 decoding="async"
                 loading="eager"
@@ -272,21 +269,21 @@ const Home = () => {
       id: '01', 
       title: 'SOHO Restaurant', 
       cat: 'Website', 
-      img: soho,
+      img: '/soho.webp',
       url: 'https://soho-eosin.vercel.app/'
     },
     { 
       id: '02', 
       title: 'Passco', 
       cat: 'Web App', 
-      img: passco, // Fixed typo
+      img: '/passco.webp', // Fixed typo
       url: 'http://paxco.pythonanywhere.com/'
     },
     { 
       id: '03', 
       title: 'RedCharger', 
       cat: 'Web App', 
-      img: hsk,
+      img: '/hsk.webp',
       url: 'https://redcharger.pythonanywhere.com/'
     }
   ].map((project, i) => (
